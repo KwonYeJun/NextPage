@@ -8,11 +8,11 @@ const contents = [
     Lottie: FirstLottie,
   },
   {
-    text: 'Another text for the second content',
+    text: '함께 하고 싶습니다.',
     Lottie: SecondLottie,
   },
   {
-    text: 'Another text for the second content',
+    text: '함께 해보고 싶습니다.',
     Lottie: ThreeLottie,
   },
 ];
