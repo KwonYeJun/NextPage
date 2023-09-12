@@ -1,0 +1,54 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+*{
+  box-sizing: border-box !important;
+}
+
+section > .container{
+  padding: 0 !important;
+}
+
+footer > .container{
+  padding: 0 !important;
+}
+
+.bg-primary {
+    @apply bg-white dark:bg-slate-800
+}
+
+.btn-project {
+    @apply inline-flex text-white dark:text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg
+}
+
+.project-card {
+    @apply flex flex-col m-3 rounded-xl w-full
+            transition duration-300 transform border border-gray-300
+            hover:scale-105
+            hover:shadow-lg
+            dark:border-gray-200/50
+            dark:hover:shadow-gray-400/40
+
+            hover:text-blue-600
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply text-slate-900 dark:text-white
+}
+
+a {
+    @apply text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-50
+}
+
+p {
+    @apply text-slate-500 dark:text-slate-400
+}
+
+.rounded-t-xl {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
