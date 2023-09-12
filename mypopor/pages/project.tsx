@@ -109,7 +109,7 @@ export const getServerSideProps: GetServerSideProps<ProjectsProps> = async () =>
   console.log(`projectNames : ${projectNames}`);
 
   return {
-    props:
-      { projects }, // will be passed to the page component as props
+    props: { projects },
+    revalidate: 3600, // Page will be regenerated every hour
   };
 };
